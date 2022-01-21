@@ -1,96 +1,74 @@
-<html>
-    <head>
-        <!-- <http://127.0.0.1:index.html></http:> -->
-        <style>
-            b{
-                background-color: blueviolet;
-            }
-            i{
-                background-color: cyan;
-            }
-            h4{
-                background-color: orangered;
-            }
-        </style>
-    </head>
-    <title>more tags ....</title>
-<h1>I'm a heading</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <script  defer src="./app.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Metropolis;
+        }
+        img{
+            width: 100px;
+            border: 2px solid red;
+            border-radius: 50%;
+            padding: 5px;
+            transition: 0.3s ease-in;
+            
+            position: relative;
+            top: 10px;
+        }
+        img:hover{
+            cursor: pointer;
+            box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+
+        }
+        div.board{
+            position: relative;
+            top: 15px;
+        }
+        th {
+            
+            border: 2px solid black;
+            /* border-radius: 5px; */
+            border-collapse: collapse;
+        
+        }
+    </style>
+</head>
 <body>
-    <!-- <b>fdjhfdhf</b>
-    <i>hellooooo</i>
-    <u><h1></h1></u>
-    <h4>heading</h4>
-    <button>
-        click me
-    </button>
-paragraph is block element
-    <b>stuff</b> 
-    <code>
-        <pre>
-            for(var=i;i<10;i++){
-                console.log('hi')
-            }
-        </pre>
-
-    </code>
-    <img width="400px" height="300px" alt="tree" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" >
-<b>This is bold</b>
-<br>
-<hr />
-<i>this is italic</i> -->
-<!-- <marquee direction="right" height="400px">this is marquee</marquee> -->
-<table>
-    <tr>
-        <th>sno</th>
-        <th>name</th>
-        <th>email</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>djjfjdhfe</td>
-        <td>dkjjjdfh@gmail.com</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>jdjdfjdf</td>
-        <td>dfhjherh@gmail.com</td>
-    </tr>
-</table>
-<form>
-    <input Name="Name" type="text" value="name">
-    <input type="number"  />
-    <input type="checkbox"  />
-    <input type="radio"  />
-    <input type="date"  />
-    <input type="color"  />
-    <input type="email"  />
-    <input  required type="password"  />
-    <input type="time" />
-    <select >
-        <option value="">select here</option>
-        <option>opn 1</option>
-        <option>opn 2</option>
-        <option>opn 3</option>
-        <option>opn 4</option>
-    </select>
-    <input type="submit" />
+    <div class="board">
+        <table >
+            <tr>
+            <th><h1>User: <span id="user">0 &nbsp;</span></th>
+            </tr>
+            
+            <tr><th><h1>Computer: <span id="computer">0 &nbsp;</span></h1</th>   
+            </tr>   
+            </table>
+        <!-- <h1>User: <span id="user">0</span></h1>
+        <h1>Computer: <span id="computer">0</span></h1> -->
+    </div>
+   <br>
+   <br>
+    <div class="choices">
     
-</form>
-
-<a  target="blank" href="https://google.com"> click me</a>
-
-
-<div>this is</div>
-<span>span1</span>
-<h2 id="th">Identify the elements</h2>
-<h2 class="th">Identify the elements</h2>
-<div id="sr" navbar>
-    <a>link1</a>
-    <a> link 2</a>
-    <a>linl3</a>
-</div>
-<blockquote>this is for writting quote</blockquote>
-<h2>hii this is for you</h2>
+    <img src="https://www.svgrepo.com/show/114864/fist.svg"
+    alt="rock" id="rock">
+    <img src="https://www.svgrepo.com/show/323911/paper.svg"
+    alt="paper" id="paper">
+    <img src="https://cdn-icons.flaticon.com/png/512/4151/premium/4151780.png?token=exp=1642770736~hmac=340fd7d9b2c28f7eb5fde317875cfd08"
+    alt="scissor" id="scissor">
+    <br>
+    <br>
+    </div>  
+    <div class="result">
+        <h1></h1>
+    </div>
 </body>
-
 </html>
